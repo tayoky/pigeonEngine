@@ -64,6 +64,8 @@ function AddPrimitive(name,x,y,z,size){
 
 //demo
 AddPrimitive("cube",0,0,0,1);
+Calcul();
+Draw();
 
 //frame
 setInterval(Calcul(),1000/FPS);
