@@ -22,6 +22,12 @@ function Calcul(){
     }
 }
 
+function Draw(){
+    for(var Ver in PlanVertex){
+        canvas2D.FillRect(Ver[0],Ver[1],4,4);
+    }
+}
+
 function FreeCam(CamSpeed){
     
 }
@@ -52,10 +58,16 @@ function AddPrimitive(name,x,y,z,size){
 //for the engine
     var field;
     var PlanVertex=[]//2D vertex
-    var canvas =document.getElementById("3D");
+    var canvas =document.getElementById("Can");
+    var canvas2D = canvas.getContext("2D")
 //end
 
+//demo
+AddPrimitive("cube",0,0,0,1);
+
+//frame
 setInterval(Calcul(),1000/FPS);
+setInterval(Draw(),1000/FPS);
 
 
 
