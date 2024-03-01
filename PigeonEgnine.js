@@ -6,9 +6,9 @@ function Calcul(){
     //offset
     for(i=0;i<CalculVertex.length;i++){
         CalculVertex[i]=[
-            CalculVertex[i][0] - Camera[0];
-            CalculVertex[i][1] - Camera[1];
-            CalculVertex[i][2] - Camera[2];
+            CalculVertex[i][0] - Camera[0],
+            CalculVertex[i][1] - Camera[1],
+            CalculVertex[i][2] - Camera[2]
         ]
     }
 
