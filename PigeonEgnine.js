@@ -59,11 +59,12 @@ function AddPrimitive(name,x,y,z,size){
     var field;
     var PlanVertex=[]//2D vertex
     var canvas =document.getElementById("Can");
-    var canvas2D = canvas.getContext("2D")
+    var canvas2D = canvas.getContext("2d")
 //end
 
 //demo
 AddPrimitive("cube",0,0,0,1);
+alert("test");
 Calcul();
 Draw();
 
