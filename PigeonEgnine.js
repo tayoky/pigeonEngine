@@ -23,7 +23,6 @@ function Calcul(){
 }
 
 function Draw(){
-    canvas2D.FillStyle = rgb(200,0,0);
     for(var Ver in PlanVertex){
         canvas2D.FillRect(Ver[0],Ver[1],4,4);
     }
