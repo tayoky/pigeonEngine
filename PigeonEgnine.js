@@ -38,13 +38,13 @@ function AddPrimitive(name,x,y,z,size){
         size *= 0.5
         //add vthe vertex/ponit of the cube
         Vertex.push(
-            [x-size,y-size,z-size]
-            [x-size,y-size,z+size]
-            [x-size,y+size,z-size]
-            [x-size,y+size,z+size]
-            [x+size,y-size,z-size]
-            [x+size,y-size,z+size]
-            [x+size,y+size,z-size]
+            [x-size,y-size,z-size],
+            [x-size,y-size,z+size],
+            [x-size,y+size,z-size],
+            [x-size,y+size,z+size],
+            [x+size,y-size,z-size],
+            [x+size,y-size,z+size],
+            [x+size,y+size,z-size],
             [x+size,y+size,z+size]);
 
     }
